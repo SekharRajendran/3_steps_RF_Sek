@@ -2,7 +2,7 @@
 
 # Three Steps to Simulate Wireless Transceivers with MATLAB
 
-## Webinar Abstract
+## Abstract
 Learn three simple steps to design RF transceivers, integrate them into your existing MATLAB code, and perform system-level simulation. This approach allows you to directly integrate RF models in MATLAB for simulating digital communication systems (5G, WLAN, etc.) or radar systems.
 
 Practical examples will demonstrate how to perform RF budget analysis and estimate the impact of S-parameters, nonlinearity, and noise. Learn how to customize your RF model to include effects such as impedance mismatches, saturation, and finite isolation.
