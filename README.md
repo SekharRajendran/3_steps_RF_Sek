@@ -5,7 +5,7 @@
 ## Abstract
 Learn three simple steps to design RF transceivers, integrate them into your existing MATLAB code, and perform system-level simulation. This approach allows you to directly integrate RF models in MATLAB for simulating digital communication systems (5G, WLAN, etc.) or radar systems.
 
-Practical examples will demonstrate how to perform RF budget analysis and estimate the impact of S-parameters, nonlinearity, and noise. Learn how to customize your RF model to include effects such as impedance mismatches, saturation, and finite isolation.
+Practical examples will demonstrate how to perform RF budget analysis and estimate the impact of S-parameters, nonlinearity, and noise. You will also learn how to customize your RF model to include effects such as impedance mismatches, saturation, and finite isolation.
 
 Additionally, you can add analog/digital data converters and control logic to the RF transceiver and develop innovative architectures. This methodology enables you to simulate the entire system in MATLAB along with digital signal processing algorithms.
 
@@ -17,7 +17,7 @@ Additionally, you can add analog/digital data converters and control logic to th
 - 5G Toolbox
 
 ## Demo Example Walkthrough
-The intent of this document is to guide MATLAB users to try the MATLAB codes and Simulink models.
+The intent of this document is to guide MATLAB users in trying the MATLAB codes and Simulink models for RF end-to-end 5G simulation.
 
 ### Example 1:
 After downloading the files, navigate to the MATLAB working directory (`Intro_Demo`) and run the code with the filename `EVMMeasure5G_01.m`. This code measures the error vector magnitude (EVM) of NR test model (NR-TM) or fixed reference channel (FRC) waveforms, including phase noise and memoryless nonlinearity at the baseband level. 
@@ -31,7 +31,9 @@ Run the code `EVMMeasure5G_02.m` to observe out-of-band effects, which includes 
 2. Load the file `examplebudgetmodel.mat` from the Budget Analyzer app. 
 3. You can export the `RFbudget` object from this app in four different ways. To export to the MATLAB workspace, click on "MATLAB workspace".
 4. Type `>> rfb` in the MATLAB command window to see details of the `rfb` object.
-5. Make this object into an RF system object using the command provided in the `EVMMeasure5G_03.m` file (enable or disable line 25 as necessary).
+
+### Example 3:
+ Make this object into an RF system object using the command provided in the `EVMMeasure5G_03.m` file (enable or disable line 25 as necessary).
 
 ### Expanding the RF System Model Beyond Budget Analysis: RF Blockset
 Use the command `>> open_system(rfTransmitter)` to open the Simulink window with input and output port configurations preset. Expand your model, add impairments, and algorithms. Save or export it back to the workspace.
